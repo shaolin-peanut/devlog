@@ -30,11 +30,6 @@ todo
         - [ ] [fail]: your strlcat return value is false
     13. [x] strchr
     14. [x] memchr
-        1.  [x] - Handle Errors
-        - [ ] doesn't work w/ basic input
-        - [ ] doesn't cast unsigned memory
-        - [ ] crashes coz reads too many bytes from s or attempts to wrtie on s
-        - [ ] failed to find '\0' character
     15. [x] memcpy
     16. [ ] memmove
     17. [x] memcmp

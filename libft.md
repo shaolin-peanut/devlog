@@ -38,7 +38,7 @@ todo
     15. [x] memcpy
     16. [ ] memmove
     17. [x] memcmp
-    18. [ ] strrchr
+    18. [x] strrchr
         1.  [ ] only error left to fix (crash because reads too much data)
     19. [ ] strncmp
     20. [ ] strnstr

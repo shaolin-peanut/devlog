@@ -40,7 +40,7 @@ todo
     17. [x] memcmp
     18. [x] strrchr
         1.  [ ] only error left to fix (crash because reads too much data)
-    19. [ ] strncmp
+    19. [x] strncmp
     20. [ ] strnstr
     21. [ ] atoi
     22. [ ] calloc

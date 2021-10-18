@@ -44,8 +44,8 @@ todo
     1. [ ] ft_substr
       - Uses malloc
       - I can use len for malloc. To get the actual len I need to do s size - start index
-    2. [ ] ft_strjoin
-       1. [ ] allocate space with malloc for concatenate thing
+    2. [x] ft_strjoin
+       1. [x] allocate space with malloc for concatenate thing
     3. [ ] ft_strtrim
     4. [ ] ft_split
     5. [ ] ft_itoa

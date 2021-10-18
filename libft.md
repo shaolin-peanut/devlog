@@ -45,13 +45,14 @@ todo
       - Uses malloc
       - I can use len for malloc. To get the actual len I need to do s size - start index
     2. [ ] ft_strjoin
+       1. [ ] allocate space with malloc for concatenate thing
     3. [ ] ft_strtrim
     4. [ ] ft_split
     5. [ ] ft_itoa
     6. [ ] ft_strmapi
     7. [ ] ft_striteri
     8. [ ] ft_putchar_fd
-    9. [ ] ft_putstr_fd
+    9.  [ ] ft_putstr_fd
     10. [ ] ft_putendl_fd
     11. [ ] ft_putnbr_fd
 - [ ] [[makefile]]

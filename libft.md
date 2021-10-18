@@ -37,6 +37,7 @@ todo
         1.  [ ] only error left to fix (crash because reads too much data)
     19. [x] strncmp
     20. [ ] strnstr
+        1.  two bugs left, no idea what causes them
     21. [ ] atoi
     22. [ ] calloc
     23. [ ] strdup

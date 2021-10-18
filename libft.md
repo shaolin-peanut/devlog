@@ -40,6 +40,7 @@ todo
         1.  two bugs left, no idea what causes them
     21. [ ] atoi
     22. [ ] calloc
+        1.  almost done, just one error left to fix
     23. [ ] strdup
   - Additional functions
     1. [ ] ft_substr

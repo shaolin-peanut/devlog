@@ -40,7 +40,7 @@ todo
     21. [ ] atoi
     22. [ ] calloc
         1.  almost done, just one error left to fix
-    23. [ ] strdup
+    23. [x] strdup
   - Additional functions
     1. [ ] ft_substr
       - Uses malloc

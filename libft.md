@@ -16,10 +16,7 @@ todo
     8. [x] tolower
     9. [x] memset
     10. [x] bzero
-    11. [ ] strlcpy
-        - [ ] handle errors
-        1.  [ ] your strlcpy does works whe size < strlen(src)
-        2.  [ ] your strlcpy copies while destsize is zero, or does not return the size of the string it tried to create
+    11. [x] strlcpy
     12. [ ] strlcat
         1. [fail]: your strlcat does not work with basic input
         2. [fail]: your strlcat does not work with over length size

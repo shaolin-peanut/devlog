@@ -17,7 +17,7 @@ todo
     9. [x] memset
     10. [x] bzero
     11. [x] strlcpy
-    12. [ ] strlcat
+    12. [x] strlcat
     13. [x] strchr
     14. [x] memchr
     15. [x] memcpy

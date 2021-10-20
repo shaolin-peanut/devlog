@@ -18,20 +18,12 @@ todo
     10. [x] bzero
     11. [x] strlcpy
     12. [ ] strlcat
-        1. [fail]: your strlcat does not work with basic input
-        2. [fail]: your strlcat does not work with over length size
-        3. [ ] [crash]: your strlcat does not work with a size of 0
-        - [ ] [fail]: your strcat does not work with empty string as second parameter
-        - [ ] [fail]: your strlcat does not set a \0 to the end
-        - [ ] [crash]: your strlcat crash because it read too many bytes or attempt to write on buff !
-        - [ ] [fail]: your strlcat return value is false
     13. [x] strchr
     14. [x] memchr
     15. [x] memcpy
     16. [ ] memmove
     17. [x] memcmp
     18. [x] strrchr
-        1.  [ ] only error left to fix (crash because reads too much data)
     19. [x] strncmp
     20. [x] strnstr
     21. [ ] atoi

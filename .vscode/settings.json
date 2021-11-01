@@ -25,7 +25,7 @@
   "spellright.notificationClass": "warning",
   "vscodeMarkdownNotes.noteCompletionConvention": "noExtension",
   "vscodeMarkdownNotes.slugifyMethod": "github-slugger",
-  "workbench.colorTheme": "Monokai",
+  "workbench.colorTheme": "Gruvbox Light Soft",
   "cmake.configureOnOpen": false,
   "gitdoc.enabled": false,
 }

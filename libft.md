@@ -4,30 +4,59 @@ todo
 - A library of standard [[C]] functions
 - [Subject](file:///Users/sbars/Downloads/en.subject.pdf)
 ## [[todo]]
+- [ ] understand purpose and application of each function
+  - [ ] create your libft docs
+    - [ ] rename this file to 'project/ code libft' and make a new libft page documenting all of it
 - [ ] functions
   - [ ] libc functions
     1. [x] isalpha
+       1. checks if char parameter is alphabetic in the ascii table
     2. [x] isdigit
+       1. checks if char paramater is a digit on the ascii table, between 0 and 9
     3. [x] isalnum
+       1. checks if char paramater is alphanumeric (isalpha + isdigit)
     4. [x] isascii
+       1. checks if char parameter is a character of the ascii table
     5. [x] isprint
+       1. checks if char paramter is printable
     6. [x] strlen
+       1. counts length of a string, stopping at the first '/0' encountered
     7. [x] toupper
+       1. transform every lowercase letter in parameter string to uppercase letter
     8. [x] tolower
-    9. [x] memset
+       1. transforms every upppercase letter in string parameter to lowercase letter
+    9.  [x] memset
+        1. > The memset() function writes len bytes of value c (converted to an unsigned char) to the string b.
+        2. `void *
+     memset(void *b, int c, size_t len);`
     10. [x] bzero
+        1.  fills string with zeros
     11. [x] strlcpy
+        1.  copies *len* characters from src string to dst string
     12. [x] strlcat
+        1.  copies *len* chars from src string to end of dst string
     13. [x] strchr
+        1.  `char * strchr(const char *s, int c);`
+        2.  locate first occurence of c in s, return pointer to that occurrence
     14. [x] memchr
+        1.  `void *memchr(const void *s, int c, size_t n);`
+        2.  locate first occurence of byte c in n bytes of string s
+        3.  returns pointer to byte located or NULL
     15. [x] memcpy
-    16. [ ] memmove
+        1.  [ ] `void *memcpy(void *restrict dst, const void *restrict src, size_t n);`
+        2.  copies n bytes of src to dst, returns original value of dst
+    16. [x] memmove
+        1.  same as memcpy but handles overlap
     17. [x] memcmp
+        1.  compares two strings. Assumed to be n bytes long. 
+        2.  Returns diff between first 2 differing bytes
+        3.  zero length strings are always identical
     18. [x] strrchr
+        1.  like strchr, but locating last char
     19. [x] strncmp
     20. [x] strnstr
-    21. [ ] atoi
-    22. [ ] calloc
+    21. [x] atoi
+    22. [x] calloc
         1.  almost done, just one error left to fix
     23. [x] strdup
   - Additional functions
@@ -37,6 +66,23 @@ todo
     2. [x] ft_strjoin
        1. [x] allocate space with malloc for concatenate thing
     3. [ ] ft_strtrim
+       1. remove chars in set array from s1 string
+       2. How could I do this?
+          1. What could go wrong?
+             1. ft_trim(empty, not_empty)
+             2. ft_trim(s1, empty)
+          2. implementation braindump
+             1. create ft_isset function
+                1. will check if char c is an occurence of string
+                2. already exists!! memchr or strchr
+             2. find malloc length
+                1. beginning
+                   1. while (strchr(set, s1[i]))
+                2. end
+             3. allocate malloc
+             4. while loop to trim set chars at beginning
+                1. 
+             5. while loop to trim set chars from end
     4. [ ] ft_split
     5. [ ] ft_itoa
     6. [ ] ft_strmapi

@@ -81,9 +81,23 @@ todo
                 2. end
              3. allocate malloc
              4. while loop to trim set chars at beginning
-                1. 
              5. while loop to trim set chars from end
+          3. What I did. (gets only bus errors)
+             1. same as above, using memchr to increment counters of start & end, then using those counters for malloc and to fill a string starting from/up to the counters
+          4. fucking malloc error
+             1. was incrementing the output pointer, and returning that, so returning a string starting with \0 was obv not gonna work
     4. [ ] ft_split
+       1. let's try to get this one done asap
+       2. `char **ft_split(char const *s, char c);`
+       3. [x] Ok first I need to correctly get the number of strings to divide
+          1. This is important for the first malloc allocation, which is creating the array of strings. Later there'll be another malloc, so I need this one to work well and be ready when I'll have strings to put in it.
+       4. Ok let's think about what's left to do
+          1. [x] find number of strings to create array
+          2. [ ] create array
+          3. [ ] split strings
+             1. [ ] iterate thru s1 and find index of substring in s1
+             2. [ ] allocate space with malloc
+             3. [ ] create substring into tab[i] with ft_substr
     5. [ ] ft_itoa
     6. [ ] ft_strmapi
     7. [ ] ft_striteri

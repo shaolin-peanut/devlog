@@ -8,7 +8,7 @@ todo
   - [ ] create your libft docs
     - [ ] rename this file to 'project/ code libft' and make a new libft page documenting all of it
 - [ ] functions
-  - [ ] libc functions
+  - [x] libc functions
     1. [x] isalpha
        1. checks if char parameter is alphabetic in the ascii table
     2. [x] isdigit
@@ -60,12 +60,12 @@ todo
         1.  almost done, just one error left to fix
     23. [x] strdup
   - Additional functions
-    1. [ ] ft_substr
+    1. [x] ft_substr
       - Uses malloc
       - I can use len for malloc. To get the actual len I need to do s size - start index
     2. [x] ft_strjoin
        1. [x] allocate space with malloc for concatenate thing
-    3. [ ] ft_strtrim
+    3. [x] ft_strtrim
        1. remove chars in set array from s1 string
        2. How could I do this?
           1. What could go wrong?
@@ -86,25 +86,35 @@ todo
              1. same as above, using memchr to increment counters of start & end, then using those counters for malloc and to fill a string starting from/up to the counters
           4. fucking malloc error
              1. was incrementing the output pointer, and returning that, so returning a string starting with \0 was obv not gonna work
-    4. [ ] ft_split
+    4. [x] ft_split
        1. let's try to get this one done asap
        2. `char **ft_split(char const *s, char c);`
        3. [x] Ok first I need to correctly get the number of strings to divide
           1. This is important for the first malloc allocation, which is creating the array of strings. Later there'll be another malloc, so I need this one to work well and be ready when I'll have strings to put in it.
        4. Ok let's think about what's left to do
           1. [x] find number of strings to create array
-          2. [ ] create array
+          2. [x] create array
           3. [ ] split strings
              1. [ ] iterate thru s1 and find index of substring in s1
              2. [ ] allocate space with malloc
              3. [ ] create substring into tab[i] with ft_substr
-    5. [ ] ft_itoa
-    6. [ ] ft_strmapi
-    7. [ ] ft_striteri
-    8. [ ] ft_putchar_fd
-    9.  [ ] ft_putstr_fd
-    10. [ ] ft_putendl_fd
-    11. [ ] ft_putnbr_fd
+    5. [x] ft_itoa
+       1. Ok let's try to understand this. First off, what is itoa?
+          1. lololol had to hit delete, I started problem-solving while confusing atoi's functionality with itoa's
+          2. I get an int, I must output a string. How do I do so? I don't have any string parsing to do, that's great. Can just output something made with strlcpy
+          3. So the int, if superior to 9, must be divided by 10
+             1. so recursive is annoying because of differing parameter/return data types
+             2. I don't know how to do it
+          4. What needs to be done
+             1. find the length of the string to be created
+             2. allocate enough space in the string
+             3. 
+    6. [x] ft_strmapi
+    7. [x] ft_striteri
+    8. [x] ft_putchar_fd
+    9.  [x] ft_putstr_fd
+    10. [x] ft_putendl_fd
+    11. [x] ft_putnbr_fd
 - [ ] [[makefile]]
   - [x] learn about makefiles
     - Starting to understand these, now I have to understand how to construct a proper makefile. A makefile contains building instructions. But what am I trying to build, and how should I do it?
@@ -121,3 +131,15 @@ todo
 - [x] [[header files]]
   - [ ] Learn about it
     - In a library, the header file should contain the prototype of every function, to be included everytime the library is included.
+- [ ] functions to debug or rewrite
+  - [ ] ft_memchr
+  - [ ] ft_strlcat
+  - [ ] ft_strrchr
+  - [ ] ft_strnstr
+  - [ ] ft_striteri
+  - additional functions here all have bus errors
+    - [ ] ft_strmapi
+    - [ ] ft_substr
+    - [ ] ft_strjoin
+    - [ ] ft_strtrim
+    - [ ] ft_split
